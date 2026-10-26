@@ -1,4 +1,3 @@
-/* Body & background */
 body {
     display: flex;
     flex-direction: column;
@@ -7,8 +6,7 @@ body {
     padding: 0;
     color: #e0e0e0;
     min-height: 100vh;
-    overflow: hidden; /* plus de scroll */
-
+    overflow-y: auto; /* Active la scrollbar verticale */
 
     background-image: url("images/desktop.png");
     background-size: cover;
@@ -22,13 +20,12 @@ main {
 }
 
 html, body {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
 
 
-/* Overlay sombre pour lisibilité */
 body::before {
     content: "";
     position: fixed;
@@ -37,7 +34,6 @@ body::before {
     z-index: -1;
 }
 
-/* Mobile background */
 @media (max-width: 768px) {
     body {
         background-image: url("images/mobile.png");
@@ -45,7 +41,6 @@ body::before {
     }
 }
 
-/* Containers */
 .container-hover {
     width: 60%;
     margin: 20px auto;
@@ -58,11 +53,9 @@ body::before {
     transition: all 0.3s ease;
 }
 
-/* Contenu caché */
 .hidden-content {
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
 }
 
@@ -81,7 +74,6 @@ body::before {
     margin: 5px 0;
 }
 
-/* Navbar */
 .navbar {
     list-style: none;
     display: flex;
@@ -111,7 +103,6 @@ body::before {
     border-radius: 5px;
 }
 
-/* Dropdown */
 .dropdown {
     position: relative;
 }
@@ -129,7 +120,6 @@ body::before {
     z-index: 1000;
 }
 
-/* Afficher menu tant qu’on est sur le parent */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -150,7 +140,6 @@ body::before {
     border-radius: 5px;
 }
 
-/* Footer */
 footer {
     background-color: rgba(20,10,30,0.85);
     color: #e0e0e0;
@@ -165,7 +154,6 @@ footer p {
     margin: 5px 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .container-hover {
         width: 90%;
