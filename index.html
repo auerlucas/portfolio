@@ -2,71 +2,145 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Portfolio Lucas Auer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Lucas Auer</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Navbar -->
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="#">Accueil</a></li>
-                <li class="dropdown">
-                    <a href="#">Compétences ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="html.html">HTML</a></li>
-                        <li><a href="css.html">CSS</a></li>
-                        <li><a href="js.html">JavaScript</a></li>
-                    </ul>
-                </li>
+                <li><a href="index.html">Portfolio</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main content -->
     <main>
-        <!-- Présentation -->
         <div class="container-hover">
             <h2>Présentation</h2>
             <div class="hidden-content">
-                <p>Étudiant en informatique à l'IUT RCC de Reims</p>
-                <p>Passionné par le développement web</p>
-                <p>Âge : 19 ans</p>
-                <p>Ville : Reims</p>
-                <p>J'aimerais financer mes futurs projets en réalisant des sites web pour des particuliers ou des petites entreprises</p>
+                <p><strong>Lucas AUER</strong> — Étudiant en <strong>BUT2 Informatique (Parcours A)</strong> à l'IUT de Lille.</p>
+                <ul>
+                    <li><strong>Ville :</strong> Lille (59)</li>
+                    <li><strong>Âge :</strong> 20 ans (Né le 24/07/2006)</li>
+                    <li><strong>Permis :</strong> Permis B</li>
+                    <li><strong>Langues :</strong> Anglais (C1), Français (Langue maternelle)</li>
+                    <li><strong>Loisirs :</strong> Échecs, Vélo, Développement informatique</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <a href="file/LucasAuer-CV.pdf" download style="color: #8a4fff; font-weight: bold; text-decoration: underline;">Télécharger mon CV</a>
+                </p>
             </div>
         </div>
 
-        <!-- Compétences -->
         <div class="container-hover">
             <h2>Compétences</h2>
             <div class="hidden-content">
+                <p><strong>Développement Web & Software :</strong></p>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript (débutant)</li>
-                    <li>Python</li>
+                    <li>HTML, CSS, JavaScript, PHP</li>
+                    <li>Python, Java, C++</li>
+                </ul>
+                <p><strong>Bases de données & SGBD :</strong></p>
+                <ul>
+                    <li>SQL, Oracle, PostgreSQL</li>
+                </ul>
+                <p><strong>Savoir-être & Atouts :</strong></p>
+                <ul>
+                    <li>Organisation, rigueur et respect des procédures</li>
+                    <li>Travail en équipe et gestion de tâches répétitives</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Projets -->
+        <div class="container-hover">
+            <h2>Formation / Diplômes</h2>
+            <div class="hidden-content">
+                <ul>
+                    <li>
+                        <strong>BUT2 Informatique - Parcours A</strong> (09/2026 - En cours)<br>
+                        <em>IUT de Lille, Villeneuve-d'Ascq</em>
+                    </li>
+                    <li>
+                        <strong>BUT1 Informatique</strong> (09/2025 - 06/2026)<br>
+                        <em>IUT de Reims, Reims</em>
+                    </li>
+                    <li>
+                        <strong>Baccalauréat Général (Spécialités NSI / Maths)</strong><br>
+                        <em>Lycée François 1er, Vitry-le-François</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-hover">
+            <h2>Expériences / Engagements</h2>
+            <div class="hidden-content">
+                <ul>
+                    <li>
+                        <strong>Cueilleur — Vendanges</strong> (Domaine Camille Marcel, Bragelogne-Beauvoir)<br>
+                        Coupe et sélection du raisin, manutention des caisses, respect des consignes de qualité et de sécurité, travail en équipe à cadence soutenue.
+                    </li>
+                    <li>
+                        <strong>Bénévolat — Restos du Cœur</strong> (Troyes)<br>
+                        Accueil des bénéficiaires, aide à la distribution, respect des consignes et rigueur dans l'exécution de tâches répétitives.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-hover" id="projets-github">
+            <h2>Projets GitHub</h2>
+            <div class="hidden-content">
+                <ul>
+                    <li>
+                        <a href="https://github.com/auerlucas/Dev-Appli" target="_blank" style="color: #8a4fff; font-weight: bold; text-decoration: underline;">
+                            auerlucas / Dev-Appli
+                        </a><br>
+                        Application web de consultation d'une base de données de films. Permet d'afficher la liste des films, le détail d'un film avec ses acteurs, et le détail d'un acteur avec sa filmographie.
+                    </li>
+                    <li style="margin-top: 10px;">
+                        <a href="https://github.com/auerlucas/MVC-Nuage-De-Points" target="_blank" style="color: #8a4fff; font-weight: bold; text-decoration: underline;">
+                            auerlucas / MVC-Nuage-De-Points
+                        </a><br>
+                        Outil sous JavaFX permettant de charger, visualiser et classifier des jeux de données sous forme de nuage de points selon une architecture MVC.
+                    </li>
+                    <li style="margin-top: 10px;">
+                        <a href="https://github.com/auerlucas/Nonogram" target="_blank" style="color: #8a4fff; font-weight: bold; text-decoration: underline;">
+                            auerlucas / Nonogram
+                        </a><br>
+                        Le jeu du Nonogram codé en Python avec la bibliothèque PyGame.
+                    </li>
+                    <li style="margin-top: 10px;">
+                        <a href="https://github.com/auerlucas/Config-Serv" target="_blank" style="color: #8a4fff; font-weight: bold; text-decoration: underline;">
+                            auerlucas / Config-Serv
+                        </a><br>
+                        Compte-rendu d’installation et de configuration complète d'un serveur.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="container-hover">
             <h2>Projets en cours / futurs projets</h2>
             <div class="hidden-content">
                 <ul>
-                    <li>Création de mon site portfolio personnel (HTML/CSS/JS) – en cours</li>
-                    <li>Futurs projets : mini-site pour particulier ou petit commerce, mini-jeu en JavaScript</li>
+                    <li>Création de mon site portfolio personnel (HTML/CSS/JS)</li>
+                    <li>Création de sites vitrines web pour particuliers et petits commerces</li>
+                    <li>Développement de mini-jeux et scripts d'automatisation en JS / Python</li>
                 </ul>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>Email : auer.lucas@icloud.com</p>
-            <p>Téléphone : 07 68 72 04 82</p>
+            <p><strong>Contact :</strong> Lucas AUER</p>
+            <p>Email : <a href="mailto:auer.lucas@icloud.com" style="color:#8a4fff;">auer.lucas@icloud.com</a> | Tél : 07 68 72 04 82</p>
+            <p>Localisation : Lille (59)</p>
+            <p>
+                <a href="https://github.com/auerlucas" target="_blank" style="color:#8a4fff; font-weight:bold;">Mon profil GitHub</a> | 
+                <a href="file/LucasAuer-CV.pdf" download style="color:#8a4fff; font-weight:bold;">Télécharger mon CV</a>
             <p>&copy; 2026 Lucas Auer - Tous droits réservés</p>
         </div>
     </footer>
